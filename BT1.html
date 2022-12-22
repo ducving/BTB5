@@ -1,0 +1,26 @@
+<htm>
+    <head>
+        <title>game đoán số</title>
+    </head>
+    <body>
+        <button onclick="batdau ()">Bắt Đầu</button>
+    <script>
+        function batdau() {
+            let SBM = Math.round(Math.random()*10);
+            let doan;
+            do {
+                doan = Number(prompt('nhập số đoán'));
+            if (SBM==doan) {
+                alert('bạn đã đoán đúng')
+            } else if (SBM<doan) {
+                alert('số bí mật nhỏ hơn')
+            } else {
+                alert('số bí mật lớn hơn')
+            }
+            } while(SBM != doan)
+        }
+        
+    </script>
+    <i class="fa-brands fa-facebook"></i>
+    </body>
+</htm>
